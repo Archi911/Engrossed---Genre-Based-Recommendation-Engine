@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engrossed- Feel Pulse of Another World</title>
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+    <header>
+        <nav> <div class="background-container">
+            <div class="logo">
+                <img src="image/img.svg" alt=""><span class="logo-text">Engrossed</span>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Anime & Book Suggestor</h2>
+            <h5>An Ultimate destination for Novel and Anime Lovers!!</h5>
+            <div class="group">
+            <label for="category">Choose Category:</label>
+            <select id="category">
+                <option value="anime">Anime</option>
+                <option value="book">Book</option>
+            </select>
+            </div>
+            <div class="group">
+            <label for="genre">Choose Genre:</label>
+            <select id="genre">
+                <option value="Action">Action</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Romance">Romance</option>
+                <option value="Horror">Horror</option>
+                <option value="Drama">Drama</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Mythology">Mythology</option>
+            </select>
+            </div>
+
+            <div class="group">
+            <label for="rating">Min Rating:</label>
+            <select id="rating">
+                <option value="7">7+</option>
+                <option value="8">8+</option>
+                <option value="9">9+</option>
+            </select>
+            </div>
+            <button onclick="suggest()">Get Suggestions</button>
+            <div class="results" id="results"></div>
+        </div>
+    </main> </body></div>
+    <footer>
+        CopyRight | Engrossed | All Rights Reserved
+    </footer>
+    <script src="javascript/project.js"></script>
+</body>
+</html>

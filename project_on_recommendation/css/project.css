@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(205, 92, 92, 0.3);
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+}
+
+img {
+    height: 43px;
+    width: 63px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    font-size: 38px;
+    margin-left: -11px;
+    font-weight: 600;
+    color:brown;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(249, 87, 87);
+}
+
+ul>li>a:hover {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(205, 92, 92, 0.3);
+    color: brown;
+    font-size: 12px;
+    padding: 13px;
+}
+
+main {
+    min-height: calc(100vh - 100px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+.container {
+    background-color: rgba(237, 215, 215, 0.8);
+    margin: 55px;
+    padding: 22px;
+    max-width: 400px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    position: fixed;
+    top: 50%; 
+    left: 20px; 
+    transform: translateY(-50%); 
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 0 12px;
+    }
+
+    .container{
+        position: static;
+        margin: 20px auto; 
+        width: 90%; 
+        top: auto;
+        left: auto;
+        transform: none;
+    }
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#results {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.group {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+.group label {
+    width: 120px; 
+    text-align: left;
+    margin-right: 10px;
+}
+.group select {
+    flex-grow: 1; 
+}
